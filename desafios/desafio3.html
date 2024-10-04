@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Carpeta</title>
+</head>
+<body>
+    <script>
+        let nombreProducto = "Remeras"
+        let precioUnitario = 300
+
+        let cantidadDeseada = prompt ("¿Cuantas" + nombreProducto + "($" + precioUnitario + ") quieres comprar?")
+
+        let total = precioUnitario * cantidadDeseada
+        if (cantidadDeseada >= 5) {
+            total = precioUnitario * 0.9
+        }
+
+        alert ("El total a pagar " + cantidadDeseada + " " + nombreProducto + " es: " + total)
+    </script>
+</body>
+</html>
