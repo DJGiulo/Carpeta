@@ -7,10 +7,18 @@
 </head>
 <body>
     <script>
-        let siempre = true;
-        while (siempre){
-            console.log ("Hola")
+        const usuario = Giulo
+        let intentos = 0
+        const contraseña = 123;
+        do{
+            let usuarioPrompt = prompt ("ingrese su usuario")
+            let contraseñaPrompt = prompt ("Ingrese su contraseña")
+
+            if (usuarioPrompt == usuario && contraseñaPrompt == contraseña){
+                alert ("Alelante")
+            }
         }
+        while (intentos <=3)
     </script>
     
 </body>
