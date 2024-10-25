@@ -7,8 +7,14 @@
 </head>
 <body>
     <script>
-        function sumarProducto () {
-            
+        function sumarProducto (precioUnitaio, cantidadDeseada) {
+            let totalGastado = cantidadDeseada * precioUnitaio;
+            return totalGastado
+
+            const precio = 10
+            let cantidad = 3
+            let totalDeLaCompra = sumarProducto (precio, cantidad)
+            console.log ("El toral gastado en el prodeucto es $" + totalDeLaCompra)
         }
     </script>
 </body>
