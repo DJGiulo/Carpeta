@@ -8,12 +8,22 @@
 <body>
     <button onclick="alerta()" id="miBtn"> alerta
         <script>
+            let miTitulo = document.getElementById("Titulo")
             let miBtn = document.getElementById("miBtn", ()=>{
                 alert ("otra cosa")
             })
 
-            miBtn.addEventListener("dblclick")
-            miBtn.addEventListener ("mousedown")
+            miBtn.addEventListener("dblclick", ()=>{
+
+            })
+            miBtn.addEventListener ("click", (e)=> {
+                console.log(e)
+                e.target.innerText ="otracosa"
+                e.target.style.color = "red"
+            })
+            miBtn.addEventListener ("mouseover", function(){
+                
+            })
 
             function alerta(){
                 alert("Como estás?")
