@@ -6,12 +6,19 @@
     <title>Document</title>
 </head>
 <body>
+    <div>Muñequera</div>
     <script>
         let boton = document.createElement("button")
         boton.id = "btnCarrito"
         boton.innerText = "Agregar al carrito"
 
-        boton.addEventListener 
+        boton.addEventListener("click",() =>{
+            const h3 = document.createElement("h3")
+            h3.innerHTML = "Elemento agregado correctamente"
+            document.body.appendChild(h3)
+        })
+
+        document.body.appendChild(boton)
     </script>
 </body>
 </html>
